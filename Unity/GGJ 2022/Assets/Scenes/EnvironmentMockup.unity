@@ -21574,7 +21574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 813977273}
   - component: {fileID: 813977272}
-  - component: {fileID: 813977271}
+  - component: {fileID: 813977274}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -21582,25 +21582,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &813977271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813977270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &813977272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21631,6 +21612,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &813977274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813977270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
 --- !u!1 &816306576
 GameObject:
   m_ObjectHideFlags: 0
@@ -33770,6 +33779,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548cc49d2136b7448ba7573758212105, type: 3}
+--- !u!1 &1204616881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 548cc49d2136b7448ba7573758212105, type: 3}
+  m_PrefabInstance: {fileID: 1204616880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1204616882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204616881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45db97edd9b71564cb92431081245cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowSections:
+  - texture: {fileID: 2800000, guid: 1df2ce0660e2d5e4780cf15e696813a9, type: 3}
+    emissionColor: {r: 7.142277, g: 7.142277, b: 2.107557, a: 1}
+  - texture: {fileID: 2800000, guid: d5b1225413a15bd4fac7c04c56b530fc, type: 3}
+    emissionColor: {r: 11.984314, g: 11.984314, b: 3.5764706, a: 1}
+  - texture: {fileID: 2800000, guid: 993b5fffde017924ea3b34f66ff98de5, type: 3}
+    emissionColor: {r: 23.968628, g: 23.968628, b: 7.152941, a: 1}
+  - texture: {fileID: 2800000, guid: b81faecd2ce016845971bf8b01ac5549, type: 3}
+    emissionColor: {r: 33.89676, g: 33.89676, b: 10.115787, a: 1}
 --- !u!1 &1208064135
 GameObject:
   m_ObjectHideFlags: 0
