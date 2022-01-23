@@ -33,7 +33,7 @@ public class Constants : MonoBehaviour
 
 	// Player Movement
 	public static float LANDING_STUN_TIME = 0.05f;
-	public static float RUN_SPEED = 4f;
+	public static float RUN_SPEED = 6f;
 	public static float JUMP_FORCE = 9f;
 	public static float SUPER_JUMP_FORCE = 13f;
 	public static float SLIDE_DURATION = 0.4f;
