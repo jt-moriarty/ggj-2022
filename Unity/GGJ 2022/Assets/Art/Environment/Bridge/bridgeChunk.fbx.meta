@@ -32,6 +32,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: metalConnectorSmall
+    second: {fileID: 2100000, guid: 2110d51bc7e3f2b41abb065fb4b089e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalRailingConnector
+    second: {fileID: 2100000, guid: 7801c6109e54cc546897f05a70966330, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalRailingMid
+    second: {fileID: 2100000, guid: ffd2eb3c61307a140a7353fb5b18ba9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalRailingPost
+    second: {fileID: 2100000, guid: 5268e3e065e6d3f418726e04ea4e168b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalRailingTop
+    second: {fileID: 2100000, guid: 84e821e9fad1a3045bf64057f5c10e57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: metalSide
     second: {fileID: 2100000, guid: a8b171d12d55d32479e60cc5b2e7cc02, type: 2}
   - first:
