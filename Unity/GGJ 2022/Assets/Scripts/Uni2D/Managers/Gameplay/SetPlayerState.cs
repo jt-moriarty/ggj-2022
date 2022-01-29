@@ -53,29 +53,29 @@ public class SetPlayerState : MonoBehaviour
 			{
 				if (myStateManager.isMoving)
 				{
-					Player.instance.PlayAnimation("run");
+					//Player.instance.PlayAnimation("run");
 				}
 				else if (myStateManager.currentAttackState == Enums.PlayerAttackState.None)
 				{
-					Player.instance.PlayAnimation("idle");
+					//Player.instance.PlayAnimation("idle");
 				}
 				break;
 			}
 			case Enums.PlayerGroundState.Rising:
 			{
-				Player.instance.PlayAnimation("jump");
+				//Player.instance.PlayAnimation("jump");
 				break;
 			}
 			case Enums.PlayerGroundState.Falling:
 			{
-				Player.instance.PlayAnimation("fall");
+				//Player.instance.PlayAnimation("fall");
 				break;
 			}
 			case Enums.PlayerGroundState.Landing:
 			{
 				if (myStateManager.currentAttackState == Enums.PlayerAttackState.None)
 				{
-					Player.instance.PlayAnimation("land");
+					//Player.instance.PlayAnimation("land");
 				}
 				break;
 			}
@@ -107,7 +107,7 @@ public class SetPlayerState : MonoBehaviour
 		{
 			case Enums.PlayerStunnedState.Hit:
 			{
-				Player.instance.PlayAnimation("hit");
+				//Player.instance.PlayAnimation("hit");
 				break;
 			}
 		}
@@ -124,14 +124,14 @@ public class SetPlayerState : MonoBehaviour
 		{
 			if (myStateManager.currentGroundState == Enums.PlayerGroundState.OnGround)
 			{
-				Player.instance.PlayAnimation("run");
+				//Player.instance.PlayAnimation("run");
 			}
 		}
 		else
 		{
 			if (myStateManager.currentGroundState == Enums.PlayerGroundState.OnGround)
 			{
-				Player.instance.PlayAnimation("idle");
+				//Player.instance.PlayAnimation("idle");
 			}
 		}
 	}

@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 
 	public static Player instance;
 
-	public Animator animator;
+	//public Animator animator;
 
 	private Rigidbody2D _rigidbody;
 	private BasicPlayerMovement _movement;
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
 	public void Die ()
 	{
 		SetControl(false);
-		PlayAnimation ("death");
+		//PlayAnimation ("death");
 
 		StartCoroutine (DeathCountdown ());
 	}
@@ -76,14 +76,14 @@ public class Player : MonoBehaviour
 		}
 		transform.position = CheckpointManager.instance.currentCheckpoint.spawnPoint;
 		SetControl(true);
-		PlayAnimation ("idle");
+		//PlayAnimation ("idle");
 		_movement.Respawn ();
 	}
 
 	public void HitGoal ()
 	{
 		SetControl(false);
-		PlayAnimation ("idle");
+		//PlayAnimation ("idle");
 	}
 
 	public void HitAdvance ()
@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
 		Vector2 l_launchDirection = new Vector2 (1f, 1f);
 		_rigidbody.simulated = true;
 		_hitbox.enabled = true;
-		PlayAnimation ("jump");
+		//PlayAnimation ("jump");
 
 		Vector2 l_launchForce = Vector2.zero;
 
@@ -128,7 +128,7 @@ public class Player : MonoBehaviour
 		_hitbox.enabled = p_control;
 	}
 
-	public void PlayAnimation (string p_animationName)
+	/*public void PlayAnimation (string p_animationName)
 	{
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName(p_animationName))
 		{
@@ -136,7 +136,7 @@ public class Player : MonoBehaviour
 		}
 
 		animator.SetTrigger(p_animationName);
-	}
+	}*/
 
 	/*private void OnAnimationComplete(tk2dSpriteAnimator anim, tk2dSpriteAnimationClip clip)
 	{

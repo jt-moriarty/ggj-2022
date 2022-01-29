@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BasicPlayerMovement : MonoBehaviour 
 {
+    public Animator animator;
+
 	public Transform spriteTransform;
 	public LayerMask groundCheckMask;
 	
@@ -35,6 +37,7 @@ public class BasicPlayerMovement : MonoBehaviour
 	private float _forwardHitX;
 
 	private PlayerStateManager myStateManager;
+    private Vector3 spriteBaseScale;
 
 	private bool _isSliding;
 	public bool isSliding
@@ -67,7 +70,9 @@ public class BasicPlayerMovement : MonoBehaviour
 		myRigidbody = GetComponent<Rigidbody2D>();
 		myTransform = transform;
 		myStateManager = GetComponent<PlayerStateManager>();
-	}
+        spriteBaseScale = spriteTransform.localScale;
+
+    }
 
 	void OnEnable () 
 	{
@@ -117,7 +122,7 @@ public class BasicPlayerMovement : MonoBehaviour
 		
 		// Set the direction and distance of the ground check
 		Vector2 downDirection = new Vector2(0, (myTransform.localScale.y * -1f));// -myTransform.up;
-		Vector2 forwardDirection = new Vector2(spriteTransform.localScale.x, 0);
+		Vector2 forwardDirection = new Vector2(myTransform.localScale.x, 0);
 		float distanceSide = 0.25f;
 		float distanceGround = 0.25f;
 		float distanceFront = (normalHitBox.size.x / 2f) + 0.05f;
@@ -315,7 +320,7 @@ public class BasicPlayerMovement : MonoBehaviour
 				{
 					Jump (Constants.JUMP_FORCE);
 					newVelocity = myRigidbody.velocity;
-					newVelocity.x = Constants.RUN_SPEED * spriteTransform.localScale.x;
+					newVelocity.x = Constants.RUN_SPEED * myTransform.localScale.x;
 					myRigidbody.gravityScale = Constants.PLAYER_GRAVITY * myTransform.localScale.y;
 
 					myRigidbody.velocity = newVelocity;
@@ -347,7 +352,7 @@ public class BasicPlayerMovement : MonoBehaviour
 		if (isHitForward)
 		{
 			// If we're trying to move toward the point we hit cancel movement
-			if (Mathf.Sign(newVelocity.x) == Mathf.Sign(spriteTransform.localScale.x))
+			if (Mathf.Sign(newVelocity.x) == Mathf.Sign(myTransform.localScale.x))
 			{
 				newVelocity.x = 0;
 			}
@@ -358,10 +363,10 @@ public class BasicPlayerMovement : MonoBehaviour
                 myStateManager.currentGroundState = Enums.PlayerGroundState.Stuck;
 				myRigidbody.gravityScale = 0f;
 				newVelocity = Vector2.zero;
-				Player.instance.PlayAnimation ("stuck");
+				//Player.instance.PlayAnimation ("stuck");
 
 				// Flip our current direction
-				if (spriteTransform.localScale.x > 0) // facing right
+				if (myTransform.localScale.x > 0) // facing right
 				{
 					SetDirection(Enums.Direction.Left);
 				}
@@ -371,7 +376,7 @@ public class BasicPlayerMovement : MonoBehaviour
 				}
 
 				Vector3 l_newPosition = myTransform.position;
-				l_newPosition.x = hitPointForward.x + (0.1f * spriteTransform.localScale.x);
+				l_newPosition.x = hitPointForward.x + (0.1f * myTransform.localScale.x);
 				myTransform.position = l_newPosition;
 
 				myRigidbody.velocity = newVelocity;
@@ -379,9 +384,11 @@ public class BasicPlayerMovement : MonoBehaviour
 			}
 		}
 		myRigidbody.velocity = newVelocity;
+        Debug.Log("Speed: " + Mathf.Abs(myRigidbody.velocity.x));
+        animator.SetFloat("Speed", Mathf.Abs(myRigidbody.velocity.x));
 
-		// Make sure the sprite is facing the right way
-		if (spriteTransform.localScale.x > 0) // facing right
+        // Make sure the sprite is facing the right way
+        if (myTransform.localScale.x > 0) // facing right
 		{
 			if (InputManager.instance.GetMovement() < 0) // Moving left
 			{
@@ -389,14 +396,29 @@ public class BasicPlayerMovement : MonoBehaviour
 			}
 		}
 
-		if (spriteTransform.localScale.x < 0) // facing left
+		if (myTransform.localScale.x < 0) // facing left
 		{
 			if (InputManager.instance.GetMovement() > 0) // Moving right
 			{
 				SetDirection(Enums.Direction.Right);
 			}
 		}
-	}
+
+        if (myTransform.localScale.x > 0.0f) {
+            spriteTransform.localScale = spriteBaseScale;
+            spriteTransform.rotation = Quaternion.identity;
+        }
+        else {
+            Vector3 fixedScale = spriteBaseScale;
+            fixedScale.x *= -1f;
+            spriteTransform.localScale = fixedScale;
+            spriteTransform.rotation = Quaternion.identity;
+            Vector3 euler = Vector3.zero;
+            euler.y = 180f;
+            spriteTransform.Rotate(euler);
+        }
+
+    }
 
 	/*
 	private void UpdateGravityControls ()
@@ -433,7 +455,8 @@ public class BasicPlayerMovement : MonoBehaviour
 
 		if (!isHitG)
 		{
-			if (myRigidbody.velocity.y > 0.5f)
+            animator.SetBool("Grounded", false);
+            if (myRigidbody.velocity.y > 0.5f)
 			{
 				if (myStateManager.currentGroundState != Enums.PlayerGroundState.Rising)
 				{
@@ -455,7 +478,8 @@ public class BasicPlayerMovement : MonoBehaviour
 			if (myStateManager.currentGroundState != Enums.PlayerGroundState.OnGround)
 			{
 				myStateManager.currentGroundState = Enums.PlayerGroundState.OnGround;
-			}
+                animator.SetBool("Grounded", true);
+            }
 		}
 
 		// Set running state
@@ -471,11 +495,11 @@ public class BasicPlayerMovement : MonoBehaviour
 
 	private void SetDirection (Enums.Direction p_direction)
 	{
-		Vector3 newScale = spriteTransform.localScale;
+		Vector3 newScale = myTransform.localScale;
 		newScale.x *= -1;
 
-
-		spriteTransform.localScale = newScale;
+        animator.SetInteger("Direction", p_direction == Enums.Direction.Left ? 1 : -1);
+        myTransform.localScale = newScale;
 		hitboxes.localScale = newScale;
 	}
 
@@ -502,6 +526,7 @@ public class BasicPlayerMovement : MonoBehaviour
 		Vector3 l_newVelocity = myRigidbody.velocity;
 		l_newVelocity.y = p_force * myTransform.localScale.y;
 		myRigidbody.velocity = l_newVelocity;
+        animator.SetTrigger("Jump");
 	}
 
 	public void Respawn ()
