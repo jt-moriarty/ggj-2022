@@ -1,0 +1,25 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:6a55da81f358ae896837d6c543cd5e96:662410eab3db1bc0c741b0cde45283e5:3fd1402164572abb4f58e609762d13af$
+#
+:format=40300
+:texture=environment.png
+:size=128x256
+:pivotpoints=enabled
+:borders=disabled
+
+bench;2;203;63;30; 0.5;0.5; 0;0;0;0
+cone;2;238;20;16; 0.5;0.5; 0;0;0;0
+mailbox;2;161;25;36; 0.5;0.5; 0;0;0;0
+recycle1;51;236;23;18; 0.5;0.5; 0;0;0;0
+recycle2;25;236;23;18; 0.5;0.5; 0;0;0;0
+telephonePole;38;22;55;88; 0.5;0.5; 0;0;0;0
+trash1;68;200;24;33; 0.5;0.5; 0;0;0;0
+trash2;95;200;24;33; 0.5;0.5; 0;0;0;0
+tree1;2;26;33;84; 0.5;0.5; 0;0;0;0
+tree2;30;113;33;84; 0.5;0.5; 0;0;0;0
+tree3;66;113;33;84; 0.5;0.5; 0;0;0;0
