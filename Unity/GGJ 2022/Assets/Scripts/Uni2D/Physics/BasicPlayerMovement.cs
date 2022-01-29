@@ -354,7 +354,8 @@ public class BasicPlayerMovement : MonoBehaviour
 
 			if (myStateManager.currentGroundState != Enums.PlayerGroundState.OnGround)
 			{
-				myStateManager.currentGroundState = Enums.PlayerGroundState.Stuck;
+                return;
+                myStateManager.currentGroundState = Enums.PlayerGroundState.Stuck;
 				myRigidbody.gravityScale = 0f;
 				newVelocity = Vector2.zero;
 				Player.instance.PlayAnimation ("stuck");
