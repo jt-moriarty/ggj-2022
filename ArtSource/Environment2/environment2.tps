@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.4.0</string>
         <key>fileName</key>
-        <string>W:/ggj-2022/ArtSource/Environment/environment.tps</string>
+        <string>W:/ggj-2022/ArtSource/Environment2/environment2.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -119,7 +119,7 @@
             <key>basic</key>
             <struct type="AlgorithmBasicSettings">
                 <key>sortBy</key>
-                <enum type="AlgorithmBasicSettings::SortBy">Best</enum>
+                <enum type="AlgorithmBasicSettings::SortBy">Name</enum>
                 <key>order</key>
                 <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
             </struct>
@@ -150,7 +150,7 @@
             <key>datafile</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>environment.tpsheet</filename>
+                <filename></filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -199,115 +199,47 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">bench.png</key>
+            <key type="filename">crossStop.png</key>
+            <key type="filename">crossWalk.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>16,8,32,15</rect>
+                <rect>6,27,12,54</rect>
                 <key>scale9Paddings</key>
-                <rect>16,8,32,15</rect>
+                <rect>6,27,12,54</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">cone.png</key>
+            <key type="filename">sign1.png</key>
+            <key type="filename">sign2.png</key>
+            <key type="filename">sign3.png</key>
+            <key type="filename">sign4.png</key>
+            <key type="filename">sign5.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>5,4,10,8</rect>
+                <rect>6,19,13,37</rect>
                 <key>scale9Paddings</key>
-                <rect>5,4,10,8</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">mailbox.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>6,9,13,18</rect>
-                <key>scale9Paddings</key>
-                <rect>6,9,13,18</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">recycle1.png</key>
-            <key type="filename">recycle2.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>6,5,12,9</rect>
-                <key>scale9Paddings</key>
-                <rect>6,5,12,9</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">telephonePole.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>14,22,28,44</rect>
-                <key>scale9Paddings</key>
-                <rect>14,22,28,44</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">trash1.png</key>
-            <key type="filename">trash2.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>6,8,12,17</rect>
-                <key>scale9Paddings</key>
-                <rect>6,8,12,17</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">tree1.png</key>
-            <key type="filename">tree2.png</key>
-            <key type="filename">tree3.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>8,21,17,42</rect>
-                <key>scale9Paddings</key>
-                <rect>8,21,17,42</rect>
+                <rect>6,19,13,37</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>bench.png</filename>
-            <filename>cone.png</filename>
-            <filename>mailbox.png</filename>
-            <filename>recycle1.png</filename>
-            <filename>recycle2.png</filename>
-            <filename>telephonePole.png</filename>
-            <filename>trash1.png</filename>
-            <filename>trash2.png</filename>
-            <filename>tree1.png</filename>
-            <filename>tree2.png</filename>
-            <filename>tree3.png</filename>
+            <filename>crossStop.png</filename>
+            <filename>crossWalk.png</filename>
+            <filename>sign1.png</filename>
+            <filename>sign2.png</filename>
+            <filename>sign3.png</filename>
+            <filename>sign4.png</filename>
+            <filename>sign5.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

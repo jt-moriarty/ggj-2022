@@ -129,9 +129,9 @@ public class BasicPlayerMovement : MonoBehaviour
 
 		// Get the start positions for the two forward checks
 		Vector3 l_forwardStartT = myTransform.position;
-		l_forwardStartT.y += (normalHitBox.size.y - 0.1f) * myTransform.localScale.y;
+        l_forwardStartT.y += normalHitBox.size.y * 0.5f + normalHitBox.offset.y;// * myTransform.localScale.y;
 		Vector3 l_forwardStartB = myTransform.position;
-		l_forwardStartB.y += 0.1f * myTransform.localScale.y;
+        l_forwardStartB.y += normalHitBox.size.y * -0.5f + normalHitBox.offset.y;// * myTransform.localScale.y;
 
 		// Create debug visualizations of the rays being used
 		Debug.DrawRay (rightSensorTransform.position, downDirection * distanceSide, Color.green);
@@ -386,6 +386,23 @@ public class BasicPlayerMovement : MonoBehaviour
 		myRigidbody.velocity = newVelocity;
         Debug.Log("Speed: " + Mathf.Abs(myRigidbody.velocity.x));
         animator.SetFloat("Speed", Mathf.Abs(myRigidbody.velocity.x));
+
+        if (Mathf.Approximately(myRigidbody.velocity.x, 0f) && Mathf.Approximately(myRigidbody.velocity.y, 0f)) {
+            animator.SetFloat("IdleTime", animator.GetFloat("IdleTime") + Time.deltaTime);
+            if (animator.GetFloat("IdleTime") > 5f) {
+                if (Random.Range(0f, 1f) > 0.5f) {
+                    animator.SetTrigger("Idle1");
+                    animator.SetFloat("IdleTime", 0f);
+                }
+                else {
+                    animator.SetTrigger("Idle2");
+                    animator.SetFloat("IdleTime", 0f);
+                }
+            }
+        }
+        else {
+            animator.SetFloat("IdleTime", 0f);
+        }
 
         // Make sure the sprite is facing the right way
         if (myTransform.localScale.x > 0) // facing right

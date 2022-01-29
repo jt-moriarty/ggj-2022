@@ -2,12 +2,15 @@ version: 2
 tpsheetFileNames:
 - Assets/Art/SpriteSheet/character.tpsheet
 - Assets/Art/SpriteSheet/environment.tpsheet
+- Assets/Art/SpriteSheet/environment2.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/Art/SpriteSheet/character.png
 - Assets/Art/SpriteSheet/environment.png
+- Assets/Art/SpriteSheet/environment2.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
 - 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png

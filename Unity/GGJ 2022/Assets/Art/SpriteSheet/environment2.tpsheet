@@ -1,0 +1,21 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:0bca2a89ea1536baca6864a61a470aa0:44a1eb8fa4e4ec3c4cd8029e4f2fc495:41f81f996a10f59ca88d9a8e8c125ced$
+#
+:format=40300
+:texture=environment2.png
+:size=128x256
+:pivotpoints=enabled
+:borders=disabled
+
+crossStop;2;146;24;108; 0.5;0.5; 0;0;0;0
+crossWalk;29;146;24;108; 0.5;0.5; 0;0;0;0
+sign1;56;180;25;74; 0.5;0.5; 0;0;0;0
+sign2;84;180;25;74; 0.5;0.5; 0;0;0;0
+sign3;2;69;25;74; 0.5;0.5; 0;0;0;0
+sign4;30;69;25;74; 0.5;0.5; 0;0;0;0
+sign5;58;69;25;74; 0.5;0.5; 0;0;0;0
