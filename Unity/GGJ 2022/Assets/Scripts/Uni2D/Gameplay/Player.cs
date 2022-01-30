@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
 	public void Die ()
 	{
-		Debug.Log("HAZARD HIT RESPAWN");
+		Respawn ();
 		//SetControl(false);
 		//PlayAnimation ("death");
 
