@@ -144,7 +144,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 146
+        y: 104
         width: 24
         height: 108
       alignment: 0
@@ -165,7 +165,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 29
-        y: 146
+        y: 104
         width: 24
         height: 108
       alignment: 0
@@ -185,8 +185,8 @@ TextureImporter:
       name: sign1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 180
+        x: 194
+        y: 138
         width: 25
         height: 74
       alignment: 0
@@ -206,8 +206,8 @@ TextureImporter:
       name: sign2
       rect:
         serializedVersion: 2
-        x: 84
-        y: 180
+        x: 222
+        y: 138
         width: 25
         height: 74
       alignment: 0
@@ -228,7 +228,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 69
+        y: 27
         width: 25
         height: 74
       alignment: 0
@@ -249,7 +249,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 69
+        y: 27
         width: 25
         height: 74
       alignment: 0
@@ -270,7 +270,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 58
-        y: 69
+        y: 27
         width: 25
         height: 74
       alignment: 0
@@ -282,6 +282,90 @@ TextureImporter:
       bones: []
       spriteID: e07087f1d85665045a10c37638b0770d
       internalID: -1581100911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 215
+        width: 124
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11abeff5473a92a479f195f9f410805d
+      internalID: 180854101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 215
+        width: 124
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e259cbec710114b8e008e31d5b7164
+      internalID: -555986593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scaffold1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 153
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648f5dea67a524348a1c0af8847283b8
+      internalID: 1300267576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scaffold2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 173
+        width: 66
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb32b0d9a6260064db4ac3de6ac9f7ed
+      internalID: -1889966261
       vertices: []
       indices: 
       edges: []
@@ -298,11 +382,15 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       sign2: 811735929
+      car1: 180854101
       crossStop: -200139254
       sign4: -1420304767
       crossWalk: -1189855292
+      scaffold2: -1889966261
       sign3: 1751979166
       sign1: 1472617203
+      scaffold1: 1300267576
+      car2: -555986593
       sign5: -1581100911
   spritePackingTag: 
   pSDRemoveMatte: 0

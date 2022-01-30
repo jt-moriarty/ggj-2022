@@ -199,6 +199,46 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">C:/Users/RSPN/Downloads/car1.png</key>
+            <key type="filename">C:/Users/RSPN/Downloads/car2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>31,10,62,20</rect>
+                <key>scale9Paddings</key>
+                <rect>31,10,62,20</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">C:/Users/RSPN/Downloads/scaffold1.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>17,15,33,30</rect>
+                <key>scale9Paddings</key>
+                <rect>17,15,33,30</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">C:/Users/RSPN/Downloads/scaffold2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>17,10,33,20</rect>
+                <key>scale9Paddings</key>
+                <rect>17,10,33,20</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">crossStop.png</key>
             <key type="filename">crossWalk.png</key>
             <struct type="IndividualSpriteSettings">
@@ -240,6 +280,10 @@
             <filename>sign3.png</filename>
             <filename>sign4.png</filename>
             <filename>sign5.png</filename>
+            <filename>C:/Users/RSPN/Downloads/scaffold1.png</filename>
+            <filename>C:/Users/RSPN/Downloads/car2.png</filename>
+            <filename>C:/Users/RSPN/Downloads/car1.png</filename>
+            <filename>C:/Users/RSPN/Downloads/scaffold2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
