@@ -22,7 +22,7 @@ public class CheckpointManager : MonoBehaviour
 	{
 		currentCheckpoint = p_checkpoint;
 		p_checkpoint.RemoveCheckpoint ();
-	}
+    }
 
 	public void ResetCheckpoints ()
 	{

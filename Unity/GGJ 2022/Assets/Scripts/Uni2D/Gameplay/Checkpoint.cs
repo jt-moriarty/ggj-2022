@@ -5,6 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
 	private Collider2D _collider;
+    private CheckpointFX _fx;
 
 	private Vector3 _spawnPoint;
 	public Vector3 spawnPoint
@@ -23,17 +24,18 @@ public class Checkpoint : MonoBehaviour
 	void Awake ()
 	{
 		_collider = GetComponentInChildren<Collider2D>();
-
-		spawnPoint = transform.position;
+        _fx = GetComponentInChildren<CheckpointFX>();
+        spawnPoint = transform.position;
 	}
 
 	public void RemoveCheckpoint ()
 	{
-		_collider.enabled = false;
+        _fx.StartFX();
+        _collider.enabled = false;
 	}
 
 	public void RestoreCheckpoint ()
 	{
-		_collider.enabled = true;
+        _collider.enabled = true;
 	}
 }
