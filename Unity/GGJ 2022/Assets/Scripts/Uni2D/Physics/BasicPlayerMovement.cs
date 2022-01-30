@@ -323,6 +323,11 @@ public class BasicPlayerMovement : MonoBehaviour
 					newVelocity.x = Constants.RUN_SPEED * myTransform.localScale.x;
 					myRigidbody.gravityScale = Constants.PLAYER_GRAVITY * myTransform.localScale.y;
 
+					if (myRigidbody.gravityScale > 0)
+					{
+						myRigidbody.gravityScale = myRigidbody.gravityScale * Constants.DOWNWARD_GRAVITY_MOD;
+					}
+
 					myRigidbody.velocity = newVelocity;
 
 					myStateManager.currentGroundState = Enums.PlayerGroundState.Rising;

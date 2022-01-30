@@ -34,12 +34,13 @@ public class Constants : MonoBehaviour
 	// Player Movement
 	public static float LANDING_STUN_TIME = 0.05f;
 	public static float RUN_SPEED = 6f;
-	public static float JUMP_FORCE = 9f;
+	public static float JUMP_FORCE = 11f;
 	public static float SUPER_JUMP_FORCE = 13f;
 	public static float SLIDE_DURATION = 0.4f;
 	public static float SLIDE_COOLDOWN = 0.75f;
 	public static float SLIDE_FORCE = 10f;
 	public static float PLAYER_GRAVITY = 2f;
+	public static float DOWNWARD_GRAVITY_MOD = 2f;
 	public static float LAUNCH_TIMER = 0.6f;
 	public static float SUPER_JUMP_CHARGE_TIME = 1f;
 	public static float GRAVITY_FLIP_COOLDOWN = 0.25f;
