@@ -5,6 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
 	public bool isTop;
+	[SerializeField] private GameObject _activeEffects = null;
 	private Collider2D _collider;
     private CheckpointFX _fx;
 
@@ -33,11 +34,13 @@ public class Checkpoint : MonoBehaviour
 	{
         //Debug.Log("RemoveCheckpoint", this.gameObject);
         _fx.StartFX();
+		_activeEffects.SetActive(true);
         _collider.enabled = false;
 	}
 
 	public void RestoreCheckpoint ()
 	{
         _collider.enabled = true;
+		_activeEffects.SetActive(false);
 	}
 }
