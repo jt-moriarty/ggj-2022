@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -144,7 +144,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 104
+        y: 276
         width: 24
         height: 108
       alignment: 0
@@ -165,7 +165,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 29
-        y: 104
+        y: 276
         width: 24
         height: 108
       alignment: 0
@@ -185,8 +185,8 @@ TextureImporter:
       name: sign1
       rect:
         serializedVersion: 2
-        x: 194
-        y: 138
+        x: 2
+        y: 199
         width: 25
         height: 74
       alignment: 0
@@ -206,8 +206,8 @@ TextureImporter:
       name: sign2
       rect:
         serializedVersion: 2
-        x: 222
-        y: 138
+        x: 30
+        y: 199
         width: 25
         height: 74
       alignment: 0
@@ -227,8 +227,8 @@ TextureImporter:
       name: sign3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 27
+        x: 58
+        y: 199
         width: 25
         height: 74
       alignment: 0
@@ -248,8 +248,8 @@ TextureImporter:
       name: sign4
       rect:
         serializedVersion: 2
-        x: 30
-        y: 27
+        x: 86
+        y: 199
         width: 25
         height: 74
       alignment: 0
@@ -269,8 +269,8 @@ TextureImporter:
       name: sign5
       rect:
         serializedVersion: 2
-        x: 58
-        y: 27
+        x: 114
+        y: 199
         width: 25
         height: 74
       alignment: 0
@@ -291,7 +291,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 215
+        y: 471
         width: 124
         height: 39
       alignment: 0
@@ -312,7 +312,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 215
+        y: 471
         width: 124
         height: 39
       alignment: 0
@@ -332,8 +332,8 @@ TextureImporter:
       name: scaffold1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 153
+        x: 119
+        y: 325
         width: 66
         height: 59
       alignment: 0
@@ -353,8 +353,8 @@ TextureImporter:
       name: scaffold2
       rect:
         serializedVersion: 2
-        x: 125
-        y: 173
+        x: 188
+        y: 345
         width: 66
         height: 39
       alignment: 0
@@ -366,6 +366,111 @@ TextureImporter:
       bones: []
       spriteID: eb32b0d9a6260064db4ac3de6ac9f7ed
       internalID: -1889966261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 429
+        width: 124
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433c94e4302012149a451d25ffc0d3cd
+      internalID: 245216981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 429
+        width: 124
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfc868ef1361cc4b81cef7296943633
+      internalID: 1219029506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 387
+        width: 124
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeefd65b03b346440864fcfbb854b41e
+      internalID: 535273245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 387
+        width: 124
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a702dca25d5ebec409f2464fc0cea232
+      internalID: 1613302307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plank
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 380
+        width: 60
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904513a822fb8b74caf2b61d7c40769d
+      internalID: -1983769508
       vertices: []
       indices: 
       edges: []
@@ -383,12 +488,17 @@ TextureImporter:
     nameFileIdTable:
       sign2: 811735929
       car1: 180854101
+      car6: 1613302307
       crossStop: -200139254
       sign4: -1420304767
       crossWalk: -1189855292
       scaffold2: -1889966261
-      sign3: 1751979166
+      car3: 245216981
+      car4: 1219029506
       sign1: 1472617203
+      car5: 535273245
+      sign3: 1751979166
+      plank: -1983769508
       scaffold1: 1300267576
       car2: -555986593
       sign5: -1581100911
