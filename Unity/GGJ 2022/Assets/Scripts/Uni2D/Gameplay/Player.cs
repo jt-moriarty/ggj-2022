@@ -6,9 +6,9 @@ public class Player : MonoBehaviour
 {
 	private const float DEATH_TIMER = 2f;
 
-	public static Player instance;
-
 	//public Animator animator;
+
+	[SerializeField] private Player otherPlayer;
 
 	private Rigidbody2D _rigidbody;
 	private BasicPlayerMovement _movement;
@@ -26,17 +26,22 @@ public class Player : MonoBehaviour
 
 	void Awake ()
 	{
-		instance = this;
-
 		_rigidbody = GetComponent<Rigidbody2D> ();
 		_movement = GetComponent<BasicPlayerMovement> ();
 		_hitbox = GetComponent<BoxCollider2D> ();
 		_transform = transform;
 
+		Debug.Assert(otherPlayer != null);
+
 //		animator.AnimationCompleted = OnAnimationComplete;
 	}
 
-	void Update ()
+    void Start()
+    {
+
+    }
+
+    void Update ()
 	{
 		CheckInteract();
 	}

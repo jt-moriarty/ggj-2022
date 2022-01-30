@@ -27,7 +27,7 @@ public class BackgroundBuilding : MonoBehaviour
         myRenderer.material.SetColor("_EmissionColor", newWindow.emissionColor);
         myRenderer.material.EnableKeyword("_EMISSION");
 
-        Debug.Log("material color: " + myRenderer.material.GetColor("_EmissionColor"));
+        //Debug.Log("material color: " + myRenderer.material.GetColor("_EmissionColor"));
     }
 }
 

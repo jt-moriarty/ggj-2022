@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class LivesManager : MonoBehaviour 
 {
 	public static LivesManager instance;
+
+	public List<Player> players;
 
 	private int _lives;
 	public int lives
@@ -48,10 +50,6 @@ public class LivesManager : MonoBehaviour
 
 	public GameObject[] livesUI;
 
-	void Awake ()
-	{
-		instance = this;
-	}
 
 	void OnEnable ()
 	{
@@ -99,7 +97,10 @@ public class LivesManager : MonoBehaviour
 	private void Die ()
 	{
 		lives = 3;
-		Player.instance.Respawn();
+		foreach (Player p in players)
+		{
+			p.Respawn();
+		}
 
 		/*SoftPauseScript.softPaused = true;
 		Time.timeScale = 0f;
@@ -110,7 +111,10 @@ public class LivesManager : MonoBehaviour
 	public void Revive ()
 	{
 		AddLife ();
-		Player.instance.Respawn ();
+		foreach (Player p in players)
+		{
+			p.Respawn();
+		}
 //		SoftPauseScript.softPaused = false;
 //		hasContinued = true;
 	}
@@ -118,7 +122,10 @@ public class LivesManager : MonoBehaviour
 	public void Restart ()
 	{
 		CheckpointManager.instance.ResetCheckpoints ();
-		Player.instance.Respawn ();
+		foreach (Player p in players)
+		{
+			p.Respawn();
+		}
 		Initialize();
 	}
 }

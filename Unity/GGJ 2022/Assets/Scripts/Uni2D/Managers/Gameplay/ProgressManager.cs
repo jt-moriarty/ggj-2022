@@ -62,12 +62,13 @@ public class ProgressManager : MonoBehaviour
 
 	public void HitGoal()
 	{
+		// Player.instance.HitGoal(); 
 		if (gameEnded) 
 		{
 			return;
 		}
 
-		Player.instance.HitGoal();
+		
 		Win ();
 		gameEnded = true;
 	}
