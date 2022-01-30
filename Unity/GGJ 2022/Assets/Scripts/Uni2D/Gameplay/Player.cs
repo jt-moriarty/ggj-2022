@@ -43,10 +43,11 @@ public class Player : MonoBehaviour
 
 	public void Die ()
 	{
-		SetControl(false);
+		Debug.Log("HAZARD HIT RESPAWN");
+		//SetControl(false);
 		//PlayAnimation ("death");
 
-		StartCoroutine (DeathCountdown ());
+		//StartCoroutine (DeathCountdown ());
 	}
 
 	private IEnumerator DeathCountdown ()
