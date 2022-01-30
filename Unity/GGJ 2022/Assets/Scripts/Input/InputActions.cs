@@ -64,6 +64,15 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""2baac634-2d07-4071-8ac4-13b7d6deb264"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -306,6 +315,28 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""61fe339f-ee90-4b9c-a5a8-041aa00d742c"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""286992be-b9cc-419d-8196-6c4d30f71008"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -897,6 +928,7 @@ namespace UnityEngine.InputSystem
             m_Platforming_Look = m_Platforming.FindAction("Look", throwIfNotFound: true);
             m_Platforming_Fire = m_Platforming.FindAction("Fire", throwIfNotFound: true);
             m_Platforming_Jump = m_Platforming.FindAction("Jump", throwIfNotFound: true);
+            m_Platforming_Interact = m_Platforming.FindAction("Interact", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -972,6 +1004,7 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Platforming_Look;
         private readonly InputAction m_Platforming_Fire;
         private readonly InputAction m_Platforming_Jump;
+        private readonly InputAction m_Platforming_Interact;
         public struct PlatformingActions
         {
             private @InputActions m_Wrapper;
@@ -980,6 +1013,7 @@ namespace UnityEngine.InputSystem
             public InputAction @Look => m_Wrapper.m_Platforming_Look;
             public InputAction @Fire => m_Wrapper.m_Platforming_Fire;
             public InputAction @Jump => m_Wrapper.m_Platforming_Jump;
+            public InputAction @Interact => m_Wrapper.m_Platforming_Interact;
             public InputActionMap Get() { return m_Wrapper.m_Platforming; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1001,6 +1035,9 @@ namespace UnityEngine.InputSystem
                     @Jump.started -= m_Wrapper.m_PlatformingActionsCallbackInterface.OnJump;
                     @Jump.performed -= m_Wrapper.m_PlatformingActionsCallbackInterface.OnJump;
                     @Jump.canceled -= m_Wrapper.m_PlatformingActionsCallbackInterface.OnJump;
+                    @Interact.started -= m_Wrapper.m_PlatformingActionsCallbackInterface.OnInteract;
+                    @Interact.performed -= m_Wrapper.m_PlatformingActionsCallbackInterface.OnInteract;
+                    @Interact.canceled -= m_Wrapper.m_PlatformingActionsCallbackInterface.OnInteract;
                 }
                 m_Wrapper.m_PlatformingActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1017,6 +1054,9 @@ namespace UnityEngine.InputSystem
                     @Jump.started += instance.OnJump;
                     @Jump.performed += instance.OnJump;
                     @Jump.canceled += instance.OnJump;
+                    @Interact.started += instance.OnInteract;
+                    @Interact.performed += instance.OnInteract;
+                    @Interact.canceled += instance.OnInteract;
                 }
             }
         }
@@ -1177,6 +1217,7 @@ namespace UnityEngine.InputSystem
             void OnLook(InputAction.CallbackContext context);
             void OnFire(InputAction.CallbackContext context);
             void OnJump(InputAction.CallbackContext context);
+            void OnInteract(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {

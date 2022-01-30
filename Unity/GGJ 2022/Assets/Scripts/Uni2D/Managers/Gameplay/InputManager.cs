@@ -148,6 +148,14 @@ public class InputManager : MonoBehaviour
 		*/
 	}
 
+	public bool GetInteract ()
+	{
+		bool l_interactDown = inputActions.Platforming.Interact.WasPressedThisFrame();
+
+		if (l_interactDown) Debug.Log("interact");
+		return l_interactDown;
+	}
+
 
 	/*
 	public bool GetSuperJumpCharging ()
