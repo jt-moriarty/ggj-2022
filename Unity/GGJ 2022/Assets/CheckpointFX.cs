@@ -11,8 +11,8 @@ public class CheckpointFX : MonoBehaviour
     void Awake () {
         rigid = GetComponentInChildren<Rigidbody2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
-        Debug.Log("rigid " + rigid.gameObject.name);
-        Debug.Log("sprite " + sprite.gameObject.name);
+        //Debug.Log("rigid " + rigid.gameObject.name);
+        //Debug.Log("sprite " + sprite.gameObject.name);
     }
 
     // Update is called once per frame
@@ -29,7 +29,8 @@ public class CheckpointFX : MonoBehaviour
         float startY = rigid.transform.position.y;
         rigid.simulated = true;
         Vector2 forceDir = new Vector2(1f, 1f);
-        rigid.AddForce(forceDir*20f, ForceMode2D.Impulse);
+        rigid.AddForce(forceDir*3f, ForceMode2D.Impulse);
+        rigid.AddTorque(500f, ForceMode2D.Impulse);
         while (startY - rigid.transform.position.y < 20f) {
             yield return null;
         }
