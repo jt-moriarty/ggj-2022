@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
+	public bool isTop;
 	private Collider2D _collider;
     private CheckpointFX _fx;
 

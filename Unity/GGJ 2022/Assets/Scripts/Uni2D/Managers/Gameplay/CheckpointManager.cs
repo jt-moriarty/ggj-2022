@@ -6,8 +6,10 @@ public class CheckpointManager : MonoBehaviour
 {
 	public static CheckpointManager instance;
 
-	public Checkpoint startingCheckpoint;
-	public Checkpoint currentCheckpoint;
+	public Checkpoint startingCheckpointTop;
+	public Checkpoint startingCheckpointBottom;
+	public Checkpoint currentCheckpointTop;
+	public Checkpoint currentCheckpointBottom;
 
 	private Checkpoint[] _checkpoints;
 
@@ -20,7 +22,14 @@ public class CheckpointManager : MonoBehaviour
 
 	public void GetCheckpoint (Checkpoint p_checkpoint)
 	{
-		currentCheckpoint = p_checkpoint;
+		if (p_checkpoint.isTop)
+		{
+			currentCheckpointTop = p_checkpoint;
+		} else 
+		{
+			currentCheckpointBottom = p_checkpoint;
+		}
+		
 		p_checkpoint.RemoveCheckpoint ();
     }
 
@@ -30,6 +39,7 @@ public class CheckpointManager : MonoBehaviour
 		{
 			_checkpoints [i].RestoreCheckpoint ();
 		}
-		currentCheckpoint = startingCheckpoint;
+		currentCheckpointTop = startingCheckpointTop;
+		currentCheckpointBottom = startingCheckpointBottom;
 	}
 }

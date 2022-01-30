@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
 
 	//public Animator animator;
 
-	[SerializeField] private Player otherPlayer;
+	[SerializeField] private Player otherPlayer = null;
+	[SerializeField] private bool _isTop = true;
 
 	private Rigidbody2D _rigidbody;
 	private BasicPlayerMovement _movement;
@@ -86,7 +87,10 @@ public class Player : MonoBehaviour
 		{
 			_rigidbody.gravityScale = 2f;
 		}
-		transform.position = CheckpointManager.instance.currentCheckpoint.spawnPoint;
+
+		Vector3 l_respawnPoint = _isTop ? CheckpointManager.instance.currentCheckpointTop.spawnPoint : CheckpointManager.instance.currentCheckpointBottom.spawnPoint;
+
+		transform.position = l_respawnPoint;
 		SetControl(true);
 		//PlayAnimation ("idle");
 		_movement.Respawn ();
