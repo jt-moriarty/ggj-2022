@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 
 public class PlatformManager : MonoBehaviour 
 {
-	[DllImport("__Internal")]
-	private static extern bool DetectMobile();
+	//[DllImport("__Internal")]
+	//private static extern bool DetectMobile();
 
 	public static PlatformManager instance;
 
@@ -49,11 +49,11 @@ public class PlatformManager : MonoBehaviour
 	{
 		instance = this;
 
-		#if UNITY_EDITOR
+		//#if UNITY_EDITOR
 		isMobile = false;
-		#else
-		isMobile = DetectMobile();
-		#endif
+		//#else
+		//isMobile = DetectMobile();
+		//#endif
 
 		screenDimensions.y = Camera.main.orthographicSize * 2f;
 		screenDimensions.x = screenDimensions.y * Screen.width / Screen.height;
