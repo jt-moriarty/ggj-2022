@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9163ef1ef10e6504a9c7ca807659a386
+guid: 74fca8ce01c96504f904233fd4190a02
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -140,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: crossStop
+      name: pigeonFly1
       rect:
         serializedVersion: 2
         x: 2
-        y: 146
+        y: 94
         width: 24
-        height: 108
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c34fa55451498724da7af2cf24fa6389
-      internalID: -200139254
+      spriteID: 3704bbf7a6c4f6a468f3b6524e88b305
+      internalID: -1797183497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crossWalk
+      name: pigeonFly2
       rect:
         serializedVersion: 2
         x: 29
-        y: 146
+        y: 94
         width: 24
-        height: 108
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fcbde5f4282f6b4098d10a2593ecbd2
-      internalID: -1189855292
+      spriteID: 3435ee3075657114da7e54e6164c93fe
+      internalID: 360523608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sign1
+      name: pigeonFly3
       rect:
         serializedVersion: 2
         x: 56
-        y: 180
-        width: 25
-        height: 74
+        y: 94
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa147b2ebda7a6c4d949fbc827e162b7
-      internalID: 1472617203
+      spriteID: 1812726067ea4b84b84949964fa85b68
+      internalID: -445313200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sign2
+      name: pigeonI1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 180
-        width: 25
-        height: 74
+        x: 83
+        y: 94
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d9e45699c944cc4c880808f74f0653a
-      internalID: 811735929
+      spriteID: 2431c22da9fd6214eb7cb0e2e27db507
+      internalID: 214081608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sign3
+      name: pigeonI2
       rect:
         serializedVersion: 2
         x: 2
-        y: 69
-        width: 25
-        height: 74
+        y: 59
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1433f38fe85bdea4cae5629d1df82dac
-      internalID: 1751979166
+      spriteID: dcc8aec13a0adcb439c4fee2ed429d22
+      internalID: -1514325949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sign4
+      name: pigeonWalk1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 69
-        width: 25
-        height: 74
+        x: 29
+        y: 59
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24494c0c2acf5a9469b5369f7384a941
-      internalID: -1420304767
+      spriteID: 7c7705dfcc8f1124dbe2441c9f5220eb
+      internalID: -1969590873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sign5
+      name: pigeonWalk2
       rect:
         serializedVersion: 2
-        x: 58
-        y: 69
-        width: 25
-        height: 74
+        x: 56
+        y: 59
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,8 +280,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e07087f1d85665045a10c37638b0770d
-      internalID: -1581100911
+      spriteID: 928a80f05d9d06b4ca491ee5a549bb85
+      internalID: -20327770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeonWalk3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 59
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc9c82327ff57c42879a69fcb17a253
+      internalID: 1718214248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratI_R
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 44
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e48b0ceb866c4644b454160d8b5af12
+      internalID: -1906482570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratI1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 44
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dd16b293fb5de409300d90946f7809
+      internalID: -2039631568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratI2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 44
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fa3f9db3e520642b6cadd8e3b99eb3
+      internalID: -1331425563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratR1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 44
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dad7323e9a8a164fa21269b4638e41a
+      internalID: 1296685217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratR2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 44
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b4bd1c52e10fb4e9fed96736cda589
+      internalID: 1267012347
       vertices: []
       indices: 
       edges: []
@@ -289,7 +415,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 15eb6ce6b1475e647b2e0fc59d081ac9
+    spriteID: d31385a7120240b4cbb83639350167ba
     internalID: 0
     vertices: []
     indices: 
@@ -297,13 +423,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sign2: 811735929
-      crossStop: -200139254
-      sign4: -1420304767
-      crossWalk: -1189855292
-      sign3: 1751979166
-      sign1: 1472617203
-      sign5: -1581100911
+      pigeonI1: 214081608
+      pigeonFly3: -445313200
+      ratR1: 1296685217
+      ratI_R: -1906482570
+      pigeonFly2: 360523608
+      pigeonFly1: -1797183497
+      pigeonWalk1: -1969590873
+      pigeonI2: -1514325949
+      ratR2: 1267012347
+      ratI2: -1331425563
+      pigeonWalk2: -20327770
+      pigeonWalk3: 1718214248
+      ratI1: -2039631568
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

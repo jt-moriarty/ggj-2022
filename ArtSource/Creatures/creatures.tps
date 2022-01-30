@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.4.0</string>
         <key>fileName</key>
-        <string>W:/ggj-2022/ArtSource/Environment2/environment2.tps</string>
+        <string>W:/ggj-2022/ArtSource/Creatures/creatures.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -150,7 +150,7 @@
             <key>datafile</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>environment2.tpsheet</filename>
+                <filename>creatures.tpsheet</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -199,47 +199,59 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">crossStop.png</key>
-            <key type="filename">crossWalk.png</key>
+            <key type="filename">pigeonFly1.png</key>
+            <key type="filename">pigeonFly2.png</key>
+            <key type="filename">pigeonFly3.png</key>
+            <key type="filename">pigeonI1.png</key>
+            <key type="filename">pigeonI2.png</key>
+            <key type="filename">pigeonWalk1.png</key>
+            <key type="filename">pigeonWalk2.png</key>
+            <key type="filename">pigeonWalk3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>6,27,12,54</rect>
+                <rect>6,8,12,16</rect>
                 <key>scale9Paddings</key>
-                <rect>6,27,12,54</rect>
+                <rect>6,8,12,16</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">sign1.png</key>
-            <key type="filename">sign2.png</key>
-            <key type="filename">sign3.png</key>
-            <key type="filename">sign4.png</key>
-            <key type="filename">sign5.png</key>
+            <key type="filename">ratI1.png</key>
+            <key type="filename">ratI2.png</key>
+            <key type="filename">ratI_R.png</key>
+            <key type="filename">ratR1.png</key>
+            <key type="filename">ratR2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>6,19,13,37</rect>
+                <rect>6,3,11,6</rect>
                 <key>scale9Paddings</key>
-                <rect>6,19,13,37</rect>
+                <rect>6,3,11,6</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>crossStop.png</filename>
-            <filename>crossWalk.png</filename>
-            <filename>sign1.png</filename>
-            <filename>sign2.png</filename>
-            <filename>sign3.png</filename>
-            <filename>sign4.png</filename>
-            <filename>sign5.png</filename>
+            <filename>pigeonFly1.png</filename>
+            <filename>pigeonFly2.png</filename>
+            <filename>pigeonFly3.png</filename>
+            <filename>pigeonI1.png</filename>
+            <filename>pigeonI2.png</filename>
+            <filename>pigeonWalk1.png</filename>
+            <filename>pigeonWalk2.png</filename>
+            <filename>pigeonWalk3.png</filename>
+            <filename>ratI_R.png</filename>
+            <filename>ratI1.png</filename>
+            <filename>ratI2.png</filename>
+            <filename>ratR1.png</filename>
+            <filename>ratR2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

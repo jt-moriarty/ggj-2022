@@ -1,0 +1,27 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:44e2ddccf39330104cade570ea7f55e4:a9d3d39e48ded209e41547aecdcfec49:27fec2e656b0ae67900f7f2d0841c107$
+#
+:format=40300
+:texture=creatures.png
+:size=128x128
+:pivotpoints=enabled
+:borders=disabled
+
+pigeonFly1;2;94;24;32; 0.5;0.5; 0;0;0;0
+pigeonFly2;29;94;24;32; 0.5;0.5; 0;0;0;0
+pigeonFly3;56;94;24;32; 0.5;0.5; 0;0;0;0
+pigeonI1;83;94;24;32; 0.5;0.5; 0;0;0;0
+pigeonI2;2;59;24;32; 0.5;0.5; 0;0;0;0
+pigeonWalk1;29;59;24;32; 0.5;0.5; 0;0;0;0
+pigeonWalk2;56;59;24;32; 0.5;0.5; 0;0;0;0
+pigeonWalk3;83;59;24;32; 0.5;0.5; 0;0;0;0
+ratI1;2;44;22;12; 0.5;0.5; 0;0;0;0
+ratI2;27;44;22;12; 0.5;0.5; 0;0;0;0
+ratI_R;52;44;22;12; 0.5;0.5; 0;0;0;0
+ratR1;77;44;22;12; 0.5;0.5; 0;0;0;0
+ratR2;102;44;22;12; 0.5;0.5; 0;0;0;0
