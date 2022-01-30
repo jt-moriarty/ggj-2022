@@ -364,28 +364,31 @@ public class BasicPlayerMovement : MonoBehaviour
 
 			if (myStateManager.currentGroundState != Enums.PlayerGroundState.OnGround)
 			{
-                return;
-                myStateManager.currentGroundState = Enums.PlayerGroundState.Stuck;
-				myRigidbody.gravityScale = 0f;
-				newVelocity = Vector2.zero;
-				//Player.instance.PlayAnimation ("stuck");
-
-				// Flip our current direction
-				if (myTransform.localScale.x > 0) // facing right
+                if (AbilityManager.instance.HasAbility(AbilityManager.Ability.WallJump))
 				{
-					SetDirection(Enums.Direction.Left);
-				}
-				else
-				{
-					SetDirection(Enums.Direction.Right);
-				}
+					myStateManager.currentGroundState = Enums.PlayerGroundState.Stuck;
+					myRigidbody.gravityScale = 0f;
+					newVelocity = Vector2.zero;
+					//Player.instance.PlayAnimation ("stuck");
 
-				Vector3 l_newPosition = myTransform.position;
-				l_newPosition.x = hitPointForward.x + (0.1f * myTransform.localScale.x);
-				myTransform.position = l_newPosition;
+					// Flip our current direction
+					if (myTransform.localScale.x > 0) // facing right
+					{
+						SetDirection(Enums.Direction.Left);
+					}
+					else
+					{
+						SetDirection(Enums.Direction.Right);
+					}
 
-				myRigidbody.velocity = newVelocity;
-				return;
+					Vector3 l_newPosition = myTransform.position;
+					l_newPosition.x = hitPointForward.x + (0.1f * myTransform.localScale.x);
+					myTransform.position = l_newPosition;
+
+					myRigidbody.velocity = newVelocity;
+					return;
+				}
+                
 			}
 		}
 		myRigidbody.velocity = newVelocity;

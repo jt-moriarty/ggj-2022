@@ -9,7 +9,7 @@ public class AbilityManager : MonoBehaviour
 	public enum Ability
 	{
 		Vector,
-		Friction,
+		WallJump,
 		Elasticity,
 		Gravity
 	}
