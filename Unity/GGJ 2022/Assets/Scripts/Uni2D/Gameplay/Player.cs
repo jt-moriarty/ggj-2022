@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 	private BasicPlayerMovement _movement;
 	private BoxCollider2D _hitbox;
 	private Transform _transform;
+	private Interactable _currentInteractable;
 
 	public bool isSliding
 	{
@@ -33,6 +34,11 @@ public class Player : MonoBehaviour
 		_transform = transform;
 
 //		animator.AnimationCompleted = OnAnimationComplete;
+	}
+
+	void Update ()
+	{
+		CheckInteract();
 	}
 
 	public void Die ()
@@ -126,6 +132,29 @@ public class Player : MonoBehaviour
 		_rigidbody.simulated = p_control;
 		_rigidbody.velocity = (p_control) ? Vector2.zero : _rigidbody.velocity;
 		_hitbox.enabled = p_control;
+	}
+
+	public Interactable GetInteractable ()
+	{
+		return _currentInteractable;
+	}
+
+	public void SetInteractable (Interactable p_interactable)
+	{
+		_currentInteractable = p_interactable;
+	}
+
+	private void CheckInteract ()
+	{
+		if (InputManager.instance.GetInteract())
+		{
+			if (_currentInteractable == null)
+			{
+				return;
+			}
+
+			_currentInteractable.Interact();
+		}
 	}
 
 	/*public void PlayAnimation (string p_animationName)
