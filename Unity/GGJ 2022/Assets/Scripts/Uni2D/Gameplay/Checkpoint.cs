@@ -31,7 +31,7 @@ public class Checkpoint : MonoBehaviour
 
 	public void RemoveCheckpoint ()
 	{
-        Debug.Log("RemoveCheckpoint", this.gameObject);
+        //Debug.Log("RemoveCheckpoint", this.gameObject);
         _fx.StartFX();
         _collider.enabled = false;
 	}

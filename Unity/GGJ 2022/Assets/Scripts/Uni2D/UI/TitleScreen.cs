@@ -1,23 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class TitleScreen : MonoBehaviour 
 {
 	public GameObject titleScreen;
 
-	public void OnClickPlay ()
-	{
-		if (SoftPauseScript.softPaused) 
-		{
-			return;
-		}
+    public void Awake () {
+        //SoftPauseScript.softPaused = true;
+    }
 
+    public void StartGame () {
 		titleScreen.SetActive (false);
 		LoadGame();
 	}
 
-	public void LoadGame ()
-	{
-		UnityEngine.SceneManagement.SceneManager.LoadScene ("TestScene");
+    public void Update () {
+        if (Keyboard.current.anyKey.wasPressedThisFrame) {
+            LoadGame();
+        }
+    }
+
+    public void LoadGame () {
+        titleScreen.SetActive(false);
+        //SoftPauseScript.softPaused = false;
 	}
 }
