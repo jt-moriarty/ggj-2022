@@ -364,7 +364,7 @@ public class BasicPlayerMovement : MonoBehaviour
 
 			if (myStateManager.currentGroundState != Enums.PlayerGroundState.OnGround)
 			{
-                if (AbilityManager.instance.HasAbility(AbilityManager.Ability.WallJump))
+                /*if (AbilityManager.instance.HasAbility(AbilityManager.Ability.WallJump))
 				{
 					myStateManager.currentGroundState = Enums.PlayerGroundState.Stuck;
 					myRigidbody.gravityScale = 0f;
@@ -388,6 +388,7 @@ public class BasicPlayerMovement : MonoBehaviour
 					myRigidbody.velocity = newVelocity;
 					return;
 				}
+                */
                 
 			}
 		}
