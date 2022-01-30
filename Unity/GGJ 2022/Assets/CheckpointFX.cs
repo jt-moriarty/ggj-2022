@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class CheckpointFX : MonoBehaviour
 {
+    Rigidbody2D rigid;
+    SpriteRenderer sprite;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Awake () {
+        rigid = GetComponentInChildren<Rigidbody2D>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        Debug.Log("rigid " + rigid.gameObject.name);
+        Debug.Log("sprite " + sprite.gameObject.name);
     }
 
     // Update is called once per frame
@@ -16,7 +21,18 @@ public class CheckpointFX : MonoBehaviour
         
     }
 
-    public void StartFX() {
+    public void StartFX () {
+        StartCoroutine(Fall());
+    }
 
+    IEnumerator Fall () {
+        float startY = rigid.transform.position.y;
+        rigid.simulated = true;
+        Vector2 forceDir = new Vector2(1f, 1f);
+        rigid.AddForce(forceDir*20f, ForceMode2D.Impulse);
+        while (startY - rigid.transform.position.y < 20f) {
+            yield return null;
+        }
+        sprite.enabled = false;
     }
 }

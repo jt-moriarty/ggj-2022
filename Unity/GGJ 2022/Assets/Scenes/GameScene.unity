@@ -1196,7 +1196,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 3.5555556, y: 1}
+    m_SensorSize: {x: 3.2, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2985,7 +2985,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 3.5555556, y: 1}
+    m_SensorSize: {x: 3.2, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3268,6 +3268,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1159222068}
     m_Modifications:
+    - target: {fileID: 880212858534329803, guid: 2eb80b23a7fe68e479f1772b9ea9f0c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 880212858534329805, guid: 2eb80b23a7fe68e479f1772b9ea9f0c8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 880212858534329805, guid: 2eb80b23a7fe68e479f1772b9ea9f0c8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1111137363381433450, guid: 2eb80b23a7fe68e479f1772b9ea9f0c8, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3457,6 +3469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level_Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 4220813988255196233, guid: 8b5af3445b805314da52a5e9732d9cc3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4220813988796814765, guid: 8b5af3445b805314da52a5e9732d9cc3, type: 3}
       propertyPath: _parentTop
       value: 
@@ -3473,5 +3489,21 @@ PrefabInstance:
       propertyPath: _parentBottom
       value: 
       objectReference: {fileID: 566322689}
+    - target: {fileID: 6815168545586760464, guid: 8b5af3445b805314da52a5e9732d9cc3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009403629990340746, guid: 8b5af3445b805314da52a5e9732d9cc3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009403629990340748, guid: 8b5af3445b805314da52a5e9732d9cc3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009403629990340748, guid: 8b5af3445b805314da52a5e9732d9cc3, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b5af3445b805314da52a5e9732d9cc3, type: 3}

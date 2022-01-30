@@ -130,7 +130,7 @@ public class InputManager : MonoBehaviour
 
 		bool l_jumpDown = inputActions.Platforming.Jump.WasPressedThisFrame();
 
-		if (l_jumpDown) Debug.Log("jump");
+		//if (l_jumpDown) Debug.Log("jump");
 		return l_jumpDown;
 		/*
 		if (PlatformManager.instance.isMobile) 
