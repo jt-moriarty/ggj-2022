@@ -27067,8 +27067,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0dd54769c8a46e4fa382b712bc2e118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingCheckpoint: {fileID: 0}
-  currentCheckpoint: {fileID: 0}
+  startingCheckpointTop: {fileID: 0}
+  startingCheckpointBottom: {fileID: 0}
+  currentCheckpointTop: {fileID: 0}
+  currentCheckpointBottom: {fileID: 0}
 --- !u!1001 &926473057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30445,14 +30447,6 @@ PrefabInstance:
     - target: {fileID: 6617248566781918566, guid: f90ea575ecbe3a145a342c39f8d2481e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6617248568244249241, guid: f90ea575ecbe3a145a342c39f8d2481e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 6617248568244249246, guid: f90ea575ecbe3a145a342c39f8d2481e, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90ea575ecbe3a145a342c39f8d2481e, type: 3}

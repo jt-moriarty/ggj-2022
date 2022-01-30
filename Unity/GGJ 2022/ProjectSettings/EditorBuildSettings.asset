@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MoriartyWorking2.unity
-    guid: a0fa368fad2155e46b7f34da2902b968
+    path: Assets/Scenes/GameScene.unity
+    guid: 5b052f5bbea2f754d9e58df94b01f91a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f2696d40351e2714c90a437caa0ab380, type: 2}
