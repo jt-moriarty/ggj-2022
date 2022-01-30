@@ -384,7 +384,7 @@ public class BasicPlayerMovement : MonoBehaviour
 			}
 		}
 		myRigidbody.velocity = newVelocity;
-        Debug.Log("Speed: " + Mathf.Abs(myRigidbody.velocity.x));
+        //Debug.Log("Speed: " + Mathf.Abs(myRigidbody.velocity.x));
         animator.SetFloat("Speed", Mathf.Abs(myRigidbody.velocity.x));
 
         if (Mathf.Approximately(myRigidbody.velocity.x, 0f) && Mathf.Approximately(myRigidbody.velocity.y, 0f)) {
