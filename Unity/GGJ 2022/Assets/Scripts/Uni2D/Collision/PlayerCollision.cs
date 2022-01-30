@@ -4,10 +4,12 @@ using System.Collections;
 public class PlayerCollision : MonoBehaviour 
 {
 	private Rigidbody2D myRigidbody;
+	private Player myPlayer;
 	
 	void Awake() 
 	{
 		myRigidbody = GetComponent<Rigidbody2D>();
+		myPlayer = GetComponent<Player>();
 	}
 	
 	void OnCollisionEnter2D(Collision2D p_collision)
@@ -19,7 +21,7 @@ public class PlayerCollision : MonoBehaviour
 	{
 		if (p_other.CompareTag ("Hazard")) 
 		{
-			Player.instance.Die ();
+			myPlayer.Die ();
 		}
 
 		if (p_other.CompareTag ("Checkpoint")) 
@@ -59,7 +61,7 @@ public class PlayerCollision : MonoBehaviour
 
 			l_newInteractable.OnPlayerEnter();
 
-			Player.instance.SetInteractable(l_newInteractable);
+			myPlayer.SetInteractable(l_newInteractable);
 		}
 	}
 
@@ -78,12 +80,12 @@ public class PlayerCollision : MonoBehaviour
 
 			l_newInteractable.OnPlayerExit();
 
-			if (Player.instance.GetInteractable() != l_newInteractable)
+			if (myPlayer.GetInteractable() != l_newInteractable)
 			{
 				return;
 			}
 
-			Player.instance.SetInteractable(null);
+			myPlayer.SetInteractable(null);
 		}
 	}
 }

@@ -6,11 +6,13 @@ public class SetPlayerState : MonoBehaviour
 {
 	private Transform myTransform;
 	PlayerStateManager myStateManager;
+	Player myPlayer;
 
 	void Awake()
 	{
 		myTransform = transform;
 		myStateManager = GetComponent<PlayerStateManager>();
+		myPlayer = GetComponent<Player>();
 	}
 
 	void OnEnable()
@@ -115,7 +117,7 @@ public class SetPlayerState : MonoBehaviour
 
 	private void ChangeMoving(GameObject dispatcher)
 	{
-		if (Player.instance.isSliding) 
+		if (myPlayer.isSliding) 
 		{
 			return;
 		}
