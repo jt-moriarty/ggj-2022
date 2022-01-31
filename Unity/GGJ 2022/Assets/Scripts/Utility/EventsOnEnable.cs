@@ -9,7 +9,6 @@ public class EventsOnEnable : MonoBehaviour
 
     void OnEnable ()
     {
-        Debug.Log("enable events");
         enableEvents.Invoke();
     }
 }
